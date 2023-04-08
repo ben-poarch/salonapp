@@ -2,9 +2,27 @@ import { Component, useState, useEffect, React } from "react";
 import { View, Text, SafeAreaView } from "react-native";
 import Styles from "./Styles";
 import WebView from "react-native-webview";
-import MapView from "react-native-maps";
+import MapView, { Marker } from "react-native-maps";
 
 //https://goo.gl/maps/gEGQRQJVqPC9z7aL8
+
+//coordinates from google maps
+var locationold = [
+  {
+    latitude: 51.49299987017053,
+    longitude: -2.5102678316616824,
+    title: "Victorias",
+    subtitle: "Downend",
+  },
+];
+
+//coordinates from apple maps
+const location = {
+  latitude: 51.492904,
+  longitude: -2.510293,
+  latitudeDelta: 0.0052,
+  longitudeDelta: 0.0021,
+};
 
 class ContactScreen extends Component {
   render() {
@@ -20,15 +38,9 @@ class ContactScreen extends Component {
         </View>
 
         <View style={{ flex: 2, borderTopWidth: 1 }}>
-          <MapView
-            style={Styles.map}
-            initialRegion={{
-              latitude: 51.49299987017053,
-              longitude: -2.5102678316616824,
-              latitudeDelta: 0.0922,
-              longitudeDelta: 0.0421,
-            }}
-          />
+          <MapView style={Styles.map} initialRegion={location}>
+            <Marker coordinate={location} />
+          </MapView>
         </View>
       </SafeAreaView>
     );

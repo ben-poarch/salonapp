@@ -55,6 +55,7 @@ class NavigationBar extends Component {
             tabBarShowLabel: true,
             tabBarActiveTintColor: "black",
             tabBarStyle: { backgroundColor: "#Eaeae5" },
+            headerTitleStyle: { fontFamily: "Oxygen-Bold" },
           })}
         >
           <Tab.Screen

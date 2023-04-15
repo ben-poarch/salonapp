@@ -30,10 +30,24 @@ export default function PromotionsScreen() {
             <SafeAreaView>
               <View style={Styles.notificationInbox}>
                 <Text> </Text>
-                <Text style={Styles.notificationInboxTextTitle}>
+                <Text
+                  style={{
+                    fontFamily: "Oxygen-Regular",
+                    fontSize: 16,
+                    textAlign: "center",
+                  }}
+                >
                   {item.title}
                 </Text>
-                <Text style={Styles.notificationInboxText}>{item.message}</Text>
+                <Text
+                  style={{
+                    fontFamily: "Oxygen-Light",
+                    fontSize: 14,
+                    textAlign: "center",
+                  }}
+                >
+                  {item.message}
+                </Text>
                 <Text> </Text>
               </View>
               <View>

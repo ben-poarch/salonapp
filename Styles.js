@@ -15,10 +15,12 @@ export default StyleSheet.create({
     flexDirection: "column",
   },
   cardStyle: {
-    height: 200,
-    width: 210,
+    height: 225,
+    width: 225,
+    borderRadius: 225 / 2, //250/2 = circle
     marginLeft: 20,
   },
+
   scrollViewImage: {
     height: 150,
     width: 160,
@@ -43,6 +45,10 @@ export default StyleSheet.create({
     fontFamily: "Verdana",
 
     letterSpacing: 0,
+  },
+  contactScreenText: {
+    fontFamily: "Oxygen-Regular",
+    fontSize: 16,
   },
   homeText: {
     color: "Black",

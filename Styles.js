@@ -2,9 +2,7 @@ import { StyleSheet, Dimensions } from "react-native";
 
 export default StyleSheet.create({
   logo: {
-    alignItems: "center",
-
-    height: 80,
+    height: 90,
     width: Dimensions.get("window").width / 4,
     left:
       Dimensions.get("window").width / 2 - Dimensions.get("window").width / 8,
@@ -15,9 +13,9 @@ export default StyleSheet.create({
     flexDirection: "column",
   },
   cardStyle: {
-    height: 225,
-    width: 225,
-    borderRadius: 225 / 2, //250/2 = circle
+    height: 220,
+    width: 200,
+
     marginLeft: 20,
   },
 
@@ -34,21 +32,65 @@ export default StyleSheet.create({
     elevation: 3,
     height: 40,
     width: Dimensions.get("window").width / 3,
-    backgroundColor: "#dee3dd",
+    backgroundColor: "#Eaeae5",
+    fontFamily: "Oxygen-Regular",
   },
   buttonText: {
     color: "black",
     fontFamily: "Verdana",
   },
   text: {
-    color: "Black",
-    fontFamily: "Verdana",
-
-    letterSpacing: 0,
+    fontFamily: "Oxygen-Regular",
+    fontSize: 16,
   },
   contactScreenText: {
     fontFamily: "Oxygen-Regular",
     fontSize: 16,
+    textDecorationLine: "underline",
+    top: 10,
+    left: 10,
+    position: "absolute",
+    width: Dimensions.get("window").width,
+    textAlign: "left",
+  },
+  contactScreenTextEmail: {
+    fontFamily: "Oxygen-Light",
+    fontSize: 16,
+    textDecorationLine: "underline",
+    MarginBottom: 20,
+    textAlign: "center",
+    backgroundColor: "#Eaeae5",
+    paddingHorizontal: 10,
+    borderRadius: 20,
+  },
+  contactScreenTextPhone: {
+    fontFamily: "Oxygen-Light",
+    textDecorationLine: "underline",
+    fontSize: 16,
+
+    textAlign: "center",
+    backgroundColor: "#Eaeae5",
+    paddingHorizontal: 10,
+    borderRadius: 20,
+  },
+  contactScreenCard: {
+    borderColor: "grey",
+    borderWidth: 0.5,
+    //flex: 0.3,
+    width: 125,
+    height: 100,
+    margin: 5,
+    backgroundColor: "#Eaeae5",
+    borderRadius: 20,
+  },
+  contactScreenCardText: {
+    fontFamily: "Oxygen-Regular",
+    fontSize: 16,
+    textAlign: "center",
+  },
+  contactScreenCardIcon: {
+    alignItems: "center",
+    padding: 10,
   },
   homeText: {
     color: "Black",
@@ -74,7 +116,7 @@ export default StyleSheet.create({
     borderRadius: 5,
     borderColor: "grey",
     backgroundColor: "#Eaeae5",
-
+    flexDirection: "row",
     top: 5,
     bottom: 5,
   },

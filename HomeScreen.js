@@ -37,6 +37,7 @@ function HomeScreen(state) {
   if (!fontsLoaded) {
     return null;
   }
+
   shouldOpenWebview = false;
   state = { shouldOpenWebview: false };
 
@@ -45,10 +46,10 @@ function HomeScreen(state) {
 
   return (
     <View style={styles.container} onLayout={onLayoutRootView}>
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 0.9 }}>
         <Image
           style={styles.logo}
-          source={require("/Users/benpoarch/SalonApp/assets/icon.png")}
+          source={require("/Users/benpoarch/SalonApp/assets/logo.png")}
         ></Image>
       </View>
 
@@ -69,37 +70,48 @@ function HomeScreen(state) {
           showsHorizontalScrollIndicator={false}
         >
           <StaffCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/lillie.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/staff/lillie.jpg")}
             name="Lillie"
             role="Salon Owner"
           />
           <StaffCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/lesley.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/staff/lesley.jpeg")}
             name="Lesley"
             role="Salon Owner"
           />
           <StaffCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/chantelle.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/staff/chantelle.jpeg")}
             name="Chantelle"
             role="Beauty Therapist"
           />
           <StaffCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/tia.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/staff/tia.jpeg")}
             name="Tia"
             role="Beauty Therapist"
           />
           <StaffCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/simi.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/staff/rosa.jpg")}
+            name="Rosa"
+            role="Nail Technician"
+          />
+          <StaffCard
+            imageUri={require("/Users/benpoarch/SalonApp/assets/staff/nickiesha.jpg")}
+            name="Nickiesha"
+            role="Massage Therapist"
+          />
+
+          <StaffCard
+            imageUri={require("/Users/benpoarch/SalonApp/assets/staff/simi.jpg")}
             name="Simi"
             role="Beauty Therapist"
           />
           <StaffCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/jasmine.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/staff/jasmine.jpg")}
             name="Jasmine"
             role="Beauty Therapist"
           />
           <StaffCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/becky.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/staff/becky.jpeg")}
             name="Becky"
             role="Beauty Therapist"
           />
@@ -123,16 +135,16 @@ function HomeScreen(state) {
           showsHorizontalScrollIndicator={false}
         >
           <CarouselCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/salon.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/gallery/salon.jpeg")}
           />
           <CarouselCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/salon2.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/gallery/salon2.jpeg")}
           />
           <CarouselCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/salon3.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/gallery/salon3.jpeg")}
           />
           <CarouselCard
-            imageUri={require("/Users/benpoarch/SalonApp/assets/salon4.jpeg")}
+            imageUri={require("/Users/benpoarch/SalonApp/assets/gallery/salon4.jpeg")}
           />
         </ScrollView>
       </View>

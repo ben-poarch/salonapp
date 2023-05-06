@@ -1,6 +1,10 @@
 import { View, Image, Text, StyleSheet } from "react-native";
 import Styles from "./Styles";
 
+//TODO: add animated carousel - https://github.com/dohooo/react-native-reanimated-carousel
+import { FadeInRight } from "react-native-reanimated";
+import Carousel from "react-native-reanimated-carousel";
+
 function StaffCard(props) {
   return (
     <View style={Styles.cardStyle}>
@@ -12,7 +16,7 @@ function StaffCard(props) {
             width: null,
             height: null,
             resizeMode: "cover",
-            borderWidth: 0,
+            borderWidth: 0.5,
             borderColor: "black",
             borderRadius: 20,
             top: 5,
@@ -21,7 +25,6 @@ function StaffCard(props) {
       </View>
       <View
         style={{
-          flerx: 1,
           paddingLeft: 10,
           paddingTop: 10,
         }}

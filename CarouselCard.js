@@ -13,7 +13,7 @@ function CarouselCard(props) {
             width: null,
             height: null,
             resizeMode: "cover",
-            borderWidth: 0,
+            borderWidth: 0.5,
             borderColor: "black",
             borderRadius: 20,
             top: 5,
